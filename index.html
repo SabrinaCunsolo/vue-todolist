@@ -14,9 +14,9 @@
                     <input type="text" placeholder="Aggiungi to do" v-model="nuovoToDo" >
                     <button v-on:click="aggiungiToDo" type="button" name="button">Inserisci</button>
                     <ul>
-                        <li v-for="(todoList, index) in todoList">
+                        <li v-for="(item, index) in todoList">
                             <i @click= "rimuoviToDo(todoList, index)" class="fas fa-check"></i>
-                            {{todoList}}</li>
+                            {{item}}</li>
                     </ul>
                 </div>
             </div>
