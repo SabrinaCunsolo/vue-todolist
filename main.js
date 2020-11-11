@@ -9,7 +9,6 @@ var app = new Vue(
     {
         el: '#root',
         data: {
-
             // creo array di todo
             todoList: [
                 'Comprare il pane',
@@ -28,8 +27,8 @@ var app = new Vue(
                 this.nuovoToDo = '';
             },
             // rimuovi to do da lista, uno alla volta, solo se ci clicchi su
-            rimuoviToDo(element) {
-              this.todoList.splice(element, 1);
+            rimuoviToDo(todoList) {
+              this.todoList.splice(todoList, 1);
             },
 
         },
