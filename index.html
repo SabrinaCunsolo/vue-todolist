@@ -8,17 +8,19 @@
         <title>To do list</title>
     </head>
     <body>
-        <div class="container">
             <div id="root">
-                        <input type="text" v-model="nuovoToDo" placeholder="Aggiungi to do">
-                        <button type="button" name="button">Inserisci</button>
+                <div class="container">
+                    <h1>To do List</h1>
+                    <input type="text" placeholder="Aggiungi to do" v-model="nuovoToDo" >
+                    <button v-on:click="aggiungiToDo" type="button" name="button">Inserisci</button>
                     <ul>
                         <li v-for="element in todoList">
-                            <i class="fas fa-check"></i>
+                            <i @click= "rimuoviToDo(element)" class="fas fa-check"></i>
                             {{todoList}}</li>
                     </ul>
+                </div>
             </div>
-        </div>
+
         <script src="main.js" charset="utf-8"></script>
     </body>
 </html>
