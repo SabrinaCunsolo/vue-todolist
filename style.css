@@ -4,13 +4,69 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Architects Daughter', cursive;
+}
+
 .container {
   width: 1000px;
   margin: 0 auto;
+  background-color: #EAF1F1;
+  padding: 30px;
+}
+
+.container input {
+    width: 150px;
+    height: 30px;
+    border: 1px solid #9cd2e2;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: #bfdfe9;
+}
+
+/* cambio colore placeholder, compatibilità per browsers */
+::-webkit-input-placeholder { /* WebKit browsers (Safari, Google Chrome, Opera 15+) */
+    color: #9d80c9;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #9d80c9;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #9d80c9;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #9d80c9;
+}
+
+.container button {
+    width: 100px;
+    height: 30px;
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: #9cd2e2;
+    border: 1px solid #bfdfe9;
+    color: #9d80c9;
+
+}
+
+h1 {
+    color: #9d80c9;
+}
+
+.fa-check {
+    color: #d86ca0;
 }
 
 #root li {
     display: flex;
     justify-content: space-around;
     display: block;
+    list-style: none;
+    border-bottom: 1px solid #BFDFE9;
+    margin-top: 20px;
+    color: #1d416b;
+}
+
+#root li i {
+    cursor: pointer;
 }
