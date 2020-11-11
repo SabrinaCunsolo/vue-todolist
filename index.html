@@ -11,7 +11,7 @@
             <div id="root">
                 <div class="container">
                     <h1>To do List</h1>
-                    <input type="text" placeholder="Aggiungi to do" v-model="nuovoToDo" >
+                    <input type="text" placeholder="Aggiungi to do" v-model="nuovoToDo" v-on:keyup.enter="submit">
                     <button v-on:click="aggiungiToDo" type="button" name="button">Inserisci</button>
                     <ul>
                         <li v-for="(item, index) in todoList">
