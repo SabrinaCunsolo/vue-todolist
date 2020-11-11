@@ -14,8 +14,8 @@
                     <input type="text" placeholder="Aggiungi to do" v-model="nuovoToDo" >
                     <button v-on:click="aggiungiToDo" type="button" name="button">Inserisci</button>
                     <ul>
-                        <li v-for="(todoList) in todoList">
-                            <i @click= "rimuoviToDo(todoList)" class="fas fa-check"></i>
+                        <li v-for="(todoList, index) in todoList">
+                            <i @click= "rimuoviToDo(todoList, index)" class="fas fa-check"></i>
                             {{todoList}}</li>
                     </ul>
                 </div>

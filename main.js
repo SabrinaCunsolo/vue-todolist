@@ -27,8 +27,8 @@ var app = new Vue(
                 this.nuovoToDo = '';
             },
             // rimuovi to do da lista, uno alla volta, solo se ci clicchi su
-            rimuoviToDo(todoList) {
-              this.todoList.splice(todoList, 1);
+            rimuoviToDo(index) {
+              this.todoList.splice(index, 1);
             },
 
         },
